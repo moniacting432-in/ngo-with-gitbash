@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background-color: #2C3E50;
+    height: 100vh;
+    color: #fff;
+    position: fixed;
+    transition: all 0.3s;
+    padding-top: 30px;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #34495E;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar li:hover {
+    background-color: #34495E;
+  }
+  
+  .sidebar .toggle-button {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    border: none;
+    background: none;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 260px;
+    padding: 20px;
+    background-color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    transition: margin-left 0.3s ease;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  form input,
+  form select,
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #2C3E50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #34495E;
+  }
+  
+  /* Donor Table Styles */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #34495E;
+    color: #fff;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  table td {
+    font-size: 1rem;
+  }
+  
+  /* Toggle Donor Details Button */
+  .toggle-donor-list {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-donor-list:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Admin Login Styles */
+  .admin-login input {
+    font-size: 1rem;
+  }
+  
+  .admin-login button {
+    background-color: #e74c3c;
+    border-radius: 8px;
+  }
+  
+  .admin-login button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+      padding-top: 20px;
+    }
+  
+    .main-content {
+      margin-left: 220px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      padding-top: 10px;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  
+    .toggle-button {
+      font-size: 1rem;
+    }
+  
+    .sidebar ul {
+      padding: 0;
+    }
+  
+    .sidebar li {
+      padding: 15px;
+    }
+  }
+  

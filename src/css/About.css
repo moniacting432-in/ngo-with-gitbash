@@ -1,0 +1,92 @@
+.about-container {
+  background: url("../assets/about.jpg") no-repeat center center/cover;
+  background-attachment: fixed; /* Keeps background fixed on scroll */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}  
+
+/* Card-style content box */
+.about-content {
+  background: rgba(255, 255, 255, 0.85); /* Soft transparency for text visibility */
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on content */
+.about-content:hover {
+  transform: scale(1.02);
+}
+
+/* Main title styling */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+/* Subtitle styling */
+.about-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #388e3c;
+  margin-top: 25px;
+}
+
+/* Paragraph text */
+.about-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Highlighted text */
+.highlight {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+/* List styling */
+.about-list {
+  text-align: left;
+  color: #444;
+  margin-bottom: 25px;
+  padding-left: 25px;
+}
+
+.about-list li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+/* List item hover effect */
+.about-list li:hover {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+/* Button Styling */
+.about-button {
+  background-color: #2e7d32;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.about-button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}

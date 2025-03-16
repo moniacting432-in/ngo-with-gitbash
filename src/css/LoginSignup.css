@@ -1,0 +1,93 @@
+/* Login Page Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  .login-box .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .login-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .login-box input:focus {
+    border-color: #74ebd5;
+  }
+  
+  /* Buttons */
+  .login-box .btn {
+    width: 100%;
+    padding: 10px;
+    background: #74ebd5;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-box .btn:hover {
+    background: #4ebac0;
+  }
+  
+  /* Logout Section */
+  .welcome-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .welcome-box .logout-btn {
+    background: #ff4d4d;
+    margin-top: 10px;
+  }
+  
+  .welcome-box .logout-btn:hover {
+    background: #cc0000;
+  }
+  
+  /* Responsive */
+  @media (max-width: 400px) {
+    .login-box, .welcome-box {
+      width: 90%;
+    }
+  }
