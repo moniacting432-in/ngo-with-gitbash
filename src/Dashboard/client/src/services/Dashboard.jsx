@@ -20,7 +20,8 @@ const Dashboard = () => {
   const [donorMoneyDonation, setDonorMoneyDonation] = useState(0);
   const [editMoneyDonation, setEditMoneyDonation] = useState(0);
 
-  const API_URL = 'http://localhost:8000/api/donors'; // Updated port
+const API_URL = import.meta.env.VITE_API_URL;
+
 
   const handleAdminLogin = (e) => {
     e.preventDefault();
