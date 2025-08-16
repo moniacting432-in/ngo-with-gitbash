@@ -20,7 +20,8 @@ const Dashboard = () => {
   const [donorMoneyDonation, setDonorMoneyDonation] = useState(0);
   const [editMoneyDonation, setEditMoneyDonation] = useState(0);
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_BASE_URL + '/api/donors';
+
 
 
   const handleAdminLogin = (e) => {
